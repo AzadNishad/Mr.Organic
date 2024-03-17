@@ -40,14 +40,8 @@ export default function BestSellingProduct() {
       <div className='w-full pb-10'>
         <HeroLeaf clsName="mx-auto" />
       </div>
-      <div className='mb-4 flex justify-between'>
-        {/* {Cards} */}
-      </div>
-      <div className='mb-4 flex justify-center'>
-        <Slider slides={Cards} slidePview={1} sliderStyle="mySlider border border-black w-[80vw]  " />
-      </div>
-      <div className='mb-4 flex justify-between'>
-
+      <div className='mb-4 flex justify-center flex-wrap gap-2 md:gap-4'>
+        {Cards}
       </div>
 
     </div>

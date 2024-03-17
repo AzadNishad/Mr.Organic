@@ -4,6 +4,33 @@ import { HeroLeaf, Coffee, Sanitizer, RedChillies, OrangeJuice } from './ImageCo
 
 export default function TrendingProduct() {
 
+    const Cards = [
+        <Card
+            // imgName={<Coffee clsName="mb-3 cursor-pointer" />}
+            category="Groceries"
+            productName="Assorted Coffee"
+            price="35.00"
+        />,
+        <Card
+            // imgName={<OrangeJuice clsName="mb-3 cursor-pointer" />}
+            category="Groceries"
+            productName="Hand Sanitizer"
+            price="15.00"
+        />,
+        <Card
+            // imgName={<Sanitizer clsName="mb-3 cursor-pointer"/>}
+            category="Groceries"
+            productName="Handpicked Red Chillies"
+            price="19.00"
+        />,
+        <Card
+            // imgName={<RedChillies clsName="mb-3 cursor-pointer"/>}
+            category="Juice"
+            productName="Fresh Orange Juice"
+            price="25.00"
+        />
+    ];
+
     return (
 
         <div className='px-[10%] pt-[150px] w-full'>
@@ -13,31 +40,8 @@ export default function TrendingProduct() {
             <div className='w-full pb-10'>
                 <HeroLeaf clsName='mx-auto' />
             </div>
-            <div className='mb-4 flex justify-between'>
-                <Card
-                    // imgName={<Coffee clsName="mb-3 cursor-pointer"/>}
-                    category="Groceries"
-                    productName="Assorted Coffee"
-                    price="35.00"
-                />
-                <Card
-                    // imgName={<OrangeJuice clsName="mb-3 cursor-pointer" />}
-                    category="Juice"
-                    productName="Fresh Orange Juice"
-                    price="25.00"
-                />
-                <Card
-                    // imgName={<Sanitizer clsName="mb-3 cursor-pointer"/>}
-                    category="Groceries"
-                    productName="Hand Sanitizer"
-                    price="15.00"
-                />
-                <Card
-                    // imgName={<RedChillies clsName="mb-3 cursor-pointer"/>}
-                    category="Groceries"
-                    productName="Handpicked Red Chillies"
-                    price="19.00"
-                />
+            <div className='mb-4 flex justify-center flex-wrap gap-2 md:gap-4'>
+               {Cards}
             </div>
         </div>
 
