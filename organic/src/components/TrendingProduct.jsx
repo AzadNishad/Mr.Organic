@@ -6,25 +6,25 @@ export default function TrendingProduct() {
 
     const Cards = [
         <Card
-            // imgName={<Coffee clsName="mb-3 cursor-pointer" />}
+            imgName={<Coffee clsName="mb-3 cursor-pointer" />}
             category="Groceries"
             productName="Assorted Coffee"
             price="35.00"
         />,
         <Card
-            // imgName={<OrangeJuice clsName="mb-3 cursor-pointer" />}
+            imgName={<OrangeJuice clsName="mb-3 cursor-pointer" />}
             category="Groceries"
             productName="Hand Sanitizer"
             price="15.00"
         />,
         <Card
-            // imgName={<Sanitizer clsName="mb-3 cursor-pointer"/>}
+            imgName={<Sanitizer clsName="mb-3 cursor-pointer"/>}
             category="Groceries"
             productName="Handpicked Red Chillies"
             price="19.00"
         />,
         <Card
-            // imgName={<RedChillies clsName="mb-3 cursor-pointer"/>}
+            imgName={<RedChillies clsName="mb-3 cursor-pointer"/>}
             category="Juice"
             productName="Fresh Orange Juice"
             price="25.00"
