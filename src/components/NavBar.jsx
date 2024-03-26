@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/Logo-big.png';
 import { FaCartShopping, FaUser, FaBarsStaggered } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 
 const NavAnchar = ({ naam }) => {
     return (
@@ -34,9 +35,15 @@ export default function NavBar() {
                         <button className='py-2 px-5 hover:text-[#4caf50]'><FaUser /></button>
                     </div>
                 </section>
-                    <div className='lg:hidden mr-5 hover:text-[#4caf50]'>
-                        <FaBarsStaggered/>
-                    </div>
+                <div className='lg:hidden mr-5 hover:text-[#4caf50]'>
+                    <FaBarsStaggered id='hemburger' onClick={() => {
+                        document.querySelector('.lg\\:hidden').classList.toggle('hidden')
+                        document.querySelector('#close').classList.toggle('inline')
+                    }} />
+                    <IoClose id='close' className='text-3xl' onClick={() => {
+                        
+                    }}/>
+                </div>
             </nav>
         </div>
     )
